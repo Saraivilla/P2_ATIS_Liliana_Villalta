@@ -3,19 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package reservasaulas;
+package enums;
 
 /**
  *
  * @author Sarai Villalta
  */
-public class ReservasAulas {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+public enum TipoEvento {
+    CONFERENCIA,
+    TALLER,
+    REUNION
 }
