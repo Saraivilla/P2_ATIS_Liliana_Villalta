@@ -21,7 +21,7 @@ public class ReservaPractica extends Reserva {
 
     //Validaciones para practica (horario predefinido y extrictamente reserva de practicas)
     @Override
-    public boolean validar() throws exception.ReservaInvalidaException {
+    public boolean validar() throws utils.exception.ReservaInvalidaException {
         if (aula.getTipoAula() != TipoAula.LABORATORIO) {
             throw new exception.ReservaInvalidaException("La reserva de practicas debe hacerse en aula de laboratorio.");
         }

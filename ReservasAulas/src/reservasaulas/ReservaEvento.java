@@ -25,7 +25,7 @@ public class ReservaEvento extends Reserva {
 
     //Validaciones para evento (horario predefinido y extrictamente reserva eventos)
     @Override
-    public boolean validar() throws exception.ReservaInvalidaException {
+    public boolean validar() throws utils.exception.ReservaInvalidaException {
         if (aula.getTipoAula() != TipoAula.AUDITORIO) {
             throw new exception.ReservaInvalidaException("La reserva de eventos debe hacerse en auditorios.");
         }

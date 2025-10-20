@@ -39,7 +39,7 @@ public abstract class Reserva implements validable {
         this.estado = estado;
     }
 
-    public abstract boolean validar() throws exception.ReservaInvalidaException;
+    public abstract boolean validar() throws utils.exception.ReservaInvalidaException;
 
     //Validar horarios solapados (coincidentes)
     public boolean solapHorarios(Reserva otra) {

@@ -1,0 +1,10 @@
+TOP 3 AULAS
+C-203 -> 360 minutos
+
+OCUPACIÓN POR TIPO AULA
+TEORICA -> 3
+AUDITORIO -> 1
+
+DISTRIBUCIÓN POR TIPO DE RESERVA
+ReservaEvento -> 1
+ReservaClase -> 3

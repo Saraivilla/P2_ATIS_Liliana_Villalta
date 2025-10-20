@@ -108,7 +108,7 @@ public class GestorReservas {
 
         try {
             reserva.validar();
-        } catch (exception.ReservaInvalidaException e) {
+        } catch (utils.exception.ReservaInvalidaException e) {
             System.out.println("Error: " + e.getMessage());
             return;
         }

@@ -22,15 +22,15 @@ public class ReservaClase extends Reserva {
 
     //Validaciones para clase (horario predefinido y extrictamente reserva clases)
     @Override
-    public boolean validar() throws exception.ReservaInvalidaException {
+    public boolean validar() throws utils.exception.ReservaInvalidaException{
         if (aula.getTipoAula() != TipoAula.TEORICA) {
             throw new exception.ReservaInvalidaException("La reserva de clases debe hacerse en aula teórica.");
         }
         if (horaInicioReserva.isBefore(LocalTime.of(7, 0))) {
             throw new exception.ReservaInvalidaException("No se puede reservar aula teórica antes de las 7:00AM.");
         }
-        if (horaFinReserva.isAfter(LocalTime.of(18, 30))) {
-            throw new exception.ReservaInvalidaException("La reserva de clase debe finalizar antes de las 6:30PM.");
+        if (horaFinReserva.isAfter(LocalTime.of(19, 30))) {
+            throw new exception.ReservaInvalidaException("La reserva de clase debe finalizar antes de las 7:30PM.");
         }
         return true;
     }
